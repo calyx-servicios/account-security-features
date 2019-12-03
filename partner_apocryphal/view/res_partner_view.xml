@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_partner_form" model="ir.ui.view">
+        <field name="name">res.partner.form</field>
+        <field name="model">res.partner</field>
+        <field name="priority" eval="93"/>
+        <field name="inherit_id" ref="l10n_ar_partner.view_partner_form"/>
+        <field name="arch" type="xml">
+            <field name="main_id_number" position="after">
+            <field name="apocryphal" />
+            <button name="action_partner_check_apocryphal" type="object" string="Check Apocryphal" class="oe_link oe_inline" attrs="{'invisible': [('cuit', '=', False)]}"/>
+            </field>
+            <xpath expr="//notebook" position="inside">
+                <page  name="apocryphal_page" string="Apocryphal History">
+                    <field name="apocryphal_ids" >
+                      <tree create="false" delete="false" >
+                         <field name="cuit"/>
+                         <field name="apocryphal_date"/>
+                         <field name="publication_date"/>
+                         <field name="cron_date"/>
+                         <field name="cron_last"/>
+                      </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+
+
+</odoo>
