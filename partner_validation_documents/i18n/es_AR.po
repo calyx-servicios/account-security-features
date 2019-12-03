@@ -1,0 +1,51 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* partner_validation_documents
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-03 19:55+0000\n"
+"PO-Revision-Date: 2019-12-03 19:55+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: partner_validation_documents
+#: model:ir.model.fields,field_description:partner_validation_documents.field_res_partner_acta_directorio
+#: model:ir.model.fields,field_description:partner_validation_documents.field_res_users_acta_directorio
+msgid "Acta Directorio"
+msgstr "Acta Directorio"
+
+#. module: partner_validation_documents
+#: model:ir.model.fields,field_description:partner_validation_documents.field_res_partner_constancia_cuit
+#: model:ir.model.fields,field_description:partner_validation_documents.field_res_users_constancia_cuit
+msgid "C.U.I.T"
+msgstr "C.U.I.T"
+
+#. module: partner_validation_documents
+#: model:ir.model.fields,field_description:partner_validation_documents.field_res_partner_constancia_cbu
+#: model:ir.model.fields,field_description:partner_validation_documents.field_res_users_constancia_cbu
+msgid "CBU"
+msgstr "CBU"
+
+#. module: partner_validation_documents
+#: model:ir.model,name:partner_validation_documents.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: partner_validation_documents
+#: model:ir.model.fields,field_description:partner_validation_documents.field_res_partner_estatuto_social
+#: model:ir.model.fields,field_description:partner_validation_documents.field_res_users_estatuto_social
+msgid "Estatuto social"
+msgstr "Estatuto social"
+
+#. module: partner_validation_documents
+#: model:ir.ui.view,arch_db:partner_validation_documents.view_partner_inherit_form
+msgid "Validation Documents"
+msgstr "Constancias"
+

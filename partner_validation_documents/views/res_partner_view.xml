@@ -1,0 +1,26 @@
+<odoo>
+  <data>
+
+    <record id="view_partner_inherit_form" model="ir.ui.view">
+        <field name="model">res.partner</field>
+        <field name="name">res.partner.form</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+
+            <page name="internal_notes" position="after" >
+                <page name="validation_documents" string="Validation Documents" attrs="{'invisible':[('supplier', '=', False)]}">
+                    <group string="Validation Documents" name="validation_documents">
+                       <field name="constancia_cuit" attrs="{'required':[('supplier', '!=', False)]}"/>
+                       <field name="estatuto_social" attrs="{'required':[('supplier', '!=', False)]}"/>
+                       <field name="acta_directorio" attrs="{'required':[('supplier', '!=', False)]}"/>
+                       <field name="constancia_cbu" attrs="{'required':[('supplier', '!=', False)]}"/>
+                    </group>
+                </page>
+            </page>
+
+        </field>
+    </record>
+
+
+  </data>
+</odoo>
