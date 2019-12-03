@@ -96,7 +96,7 @@ class ResPartnerApocryphal(models.Model):
                         
                         partner = self.env['res.partner'].search([('main_id_number', '=', cuit)])
                         if partner:
-                            partner.action_partner_check_apocryphal(cron_id.id)
+                            partner.action_partner_cron_apocryphal(cron_id.id)
         if count>0:
             for cron in self.env['res.partner.apocryphal.cron'].search([('id','!=',cron_id.id)]):
                 cron.last=False
@@ -127,9 +127,12 @@ class ResPartner(models.Model):
                 'res_id': self.id,
                 })
 
-                    
     @api.multi
-    def action_partner_check_apocryphal(self, cron_id=False):
+    def action_partner_check_apocryphal(self):
+        self.action_partner_cron_apocryphal(cron_id=False)
+
+    @api.multi
+    def action_partner_cron_apocryphal(self, cron_id=False):
         _logger.debug('======>action_partner_check_apocryphal<======')
         self.ensure_one()
         partner_apocryphal=self.env['res.partner.apocryphal']
@@ -137,6 +140,7 @@ class ResPartner(models.Model):
             cron_id =self.env['res.partner.apocryphal.cron'].search([('last','=',True)]).ids
             if cron_id:
                 cron_id=cron_id[0]
+        _logger.debug('Apocryphal Data for Partner Found CRONID?====>%r',cron_id)
         partner = partner_apocryphal.search([('cuit', '=', self.main_id_number),('cron_id','=',cron_id)])
         _logger.debug('Apocryphal Data for Partner Found?====>%r',self.name)
         if partner:
