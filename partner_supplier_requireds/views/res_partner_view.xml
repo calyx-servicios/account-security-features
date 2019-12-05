@@ -1,0 +1,69 @@
+<odoo>
+  <data>
+
+    <record id="view_partner_inherit_form" model="ir.ui.view">
+        <field name="model">res.partner</field>
+        <field name="name">res.partner.form</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='country_id']" position="attributes">
+                <attribute name="attrs">{'required': [('supplier', '!=', False)]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='state_id']" position="attributes">
+                <attribute name="attrs">{'required': [('supplier', '!=', False)]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='city']" position="attributes">
+                <attribute name="attrs">{'required': [('supplier', '!=', False)]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='zip']" position="attributes">
+                <attribute name="attrs">{'required': [('supplier', '!=', False)]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='street']" position="attributes">
+                <attribute name="attrs">{'required': [('supplier', '!=', False)]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='phone']" position="attributes">
+                <attribute name="attrs">{'required': [('supplier', '!=', False)]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='email']" position="attributes">
+                <attribute name="attrs">{'required': [('supplier', '!=', False)]}</attribute>
+            </xpath>
+
+<!-- 
+default_regimen_ganancias_id
+impuesto_ganancias_padron -->
+
+        </field>
+    </record>
+
+ <!-- 
+Esto puede chocar con el modulo contact_extension. Hay que pretar atencion al acoplamiento entre estos dos moduloes 
+ -->
+
+    <record id="base_view_partner_form" model="ir.ui.view">
+    <field name="model">res.partner</field>
+    <field name="name">res.partner.form</field>
+    <field name="inherit_id" ref="l10n_ar_account.base_view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='afip_responsability_type_id']" position="attributes">
+                <attribute name="attrs">{'required': [('supplier', '!=', False)]}</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_partner_form" model="ir.ui.view">
+    <field name="model">res.partner</field>
+    <field name="name">res.partner.form</field>
+    <field name="inherit_id" ref="l10n_ar_partner.view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='main_id_category_id']" position="attributes">
+                <attribute name="attrs">{'required': [('supplier', '!=', False)]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='main_id_number']" position="attributes">
+                <attribute name="attrs">{'required': [('supplier', '!=', False)]}</attribute>
+            </xpath>
+        </field>
+    </record>
+
+  </data>
+</odoo>
