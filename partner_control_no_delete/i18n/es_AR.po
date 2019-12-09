@@ -1,0 +1,42 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* partner_control_no_delete
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-09 10:20+0000\n"
+"PO-Revision-Date: 2019-12-09 10:20+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: partner_control_no_delete
+#: model:ir.model.fields,field_description:partner_control_no_delete.field_res_users_delete_res_partner
+msgid "Can Delete a Partner?"
+msgstr "Puede Borrar un Parter?"
+
+#. module: partner_control_no_delete
+#: model:ir.model,name:partner_control_no_delete.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: partner_control_no_delete
+#: model:ir.ui.view,arch_db:partner_control_no_delete.view_users_form_inherit
+msgid "Partner Rules"
+msgstr "Reglas de Partner"
+
+#. module: partner_control_no_delete
+#: model:ir.model,name:partner_control_no_delete.model_res_users
+msgid "Users"
+msgstr "Usuarios"
+
+#. module: partner_control_no_delete
+#: code:addons/partner_control_no_delete/models/res_partner.py:18
+#, python-format
+msgid "You try to delete a Partner and not have Permissions. You Can Archivate the partner or contact the administrator and request Permissions."
+msgstr "Intenta eliminar una Empresa/Persona y no tiene permisos. Puede archivar al mismo o ponerse en contacto con el administrador y solicitar Permisos."
