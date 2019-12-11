@@ -32,7 +32,8 @@
     },
     'data': [
         'view/res_partner_view.xml',
-        'data/cron.xml'
+        'data/cron.xml',
+        'security/ir.model.access.csv',
     ],
     'demo': [
     ],
