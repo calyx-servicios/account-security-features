@@ -138,10 +138,12 @@ class ResPartner(models.Model):
 
     @api.multi
     def action_partner_check_syncro(self):
+        different=False
         try:
-            self.check_changes_partner()
+            different=self.check_changes_partner()
         except:
             pass
+        self.different=different
 
 
         
