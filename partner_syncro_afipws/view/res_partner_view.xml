@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_partner_form" model="ir.ui.view">
+        <field name="name">res.partner.form</field>
+        <field name="model">res.partner</field>
+        <field name="priority" eval="94"/>
+        <field name="inherit_id" ref="l10n_ar_partner.view_partner_form"/>
+        <field name="arch" type="xml">
+            <field name="main_id_number" position="after">
+            <field name="different"/>
+            <button name="action_partner_check_syncro" type="object" string="Check Syncro" class="oe_link oe_inline" attrs="{'invisible': [('cuit', '=', False)]}"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_res_partner_different" model="ir.ui.view">
+            <field name="name">view.res.partner.different.inherit</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_res_partner_filter"/>
+            <field name="arch" type="xml">
+                <field name="category_id" position="after">
+                    <field name="different"/>
+                </field>
+                <filter name="salesperson" position="after">
+                    <filter string="AFIP Different" context="{'group_by': 'different'}"/>
+                </filter>
+                <filter name="inactive" position="after">
+                        <filter string="Afip Different" name="different" domain="[('different','=',True)]"/>
+                </filter>
+            </field>
+        </record>
+
+</odoo>
