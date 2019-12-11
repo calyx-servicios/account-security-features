@@ -26,7 +26,7 @@ class ResPartnerSyncroAfip(models.Model):
     def action_partner_cron_syncro_afipws(self):
         _logger.debug('======>action_partner_cron_syncro_afipws<======')
         count=0
-        filters = self.get_filters()
+        filters = self.env['res.partner'].get_filters()
         if len(filters)>0:
             for partner in self.env['res.partner'].search([('supplier', '=', True)]):
                 try:
@@ -54,34 +54,7 @@ class ResPartnerSyncroAfip(models.Model):
                 'needaction_partner_ids': [(4, user.partner_id.id, None) for user in user_ids], 
                 })
 
-    @api.multi
-    def get_filters(self):
-        ICPSudo = self.env['ir.config_parameter'].sudo()
-        different_name=bool(ICPSudo.get_param('partner_syncro_afipws.different_name') or False)
-        different_estado_padron=bool(ICPSudo.get_param('partner_syncro_afipws.different_estado_padron') or False)
-        different_state_id=bool(ICPSudo.get_param('partner_syncro_afipws.different_state_id') or False)
-        different_street=bool(ICPSudo.get_param('partner_syncro_afipws.different_street') or False)
-        different_empleador_padron=bool(ICPSudo.get_param('partner_syncro_afipws.different_empleador_padron') or False)
-        different_imp_ganancias_padron=bool(ICPSudo.get_param('partner_syncro_afipws.different_imp_ganancias_padron') or False)
-        different_imp_iva_padron=bool(ICPSudo.get_param('partner_syncro_afipws.different_imp_iva_padron') or False)
-        filters=[]
-        if different_name:
-            filters.append('name')
-        if different_estado_padron:
-            filters.append('estado_padron')
-        if different_state_id:
-            filters.append('state_id')
-        if different_street:
-            filters.append('street')
-        if different_empleador_padron:
-            filters.append('empleador_padron')
-        if different_imp_ganancias_padron:
-            filters.append('imp_ganancias_padron')
-        if different_imp_iva_padron:
-            filters.append('imp_iva_padron')
-        _logger.debug('======>FILTERS<======')
-        _logger.debug('%r',filters)
-        return filters
+    
 
 
     
@@ -139,12 +112,41 @@ class ResPartner(models.Model):
     @api.multi
     def action_partner_check_syncro(self):
         different=False
+        filters=self.get_filters()
         try:
-            different=self.check_changes_partner()
+            different=self.check_changes_partner(filters)
         except:
             pass
         self.different=different
 
+    @api.multi
+    def get_filters(self):
+        ICPSudo = self.env['ir.config_parameter'].sudo()
+        different_name=bool(ICPSudo.get_param('partner_syncro_afipws.different_name') or False)
+        different_estado_padron=bool(ICPSudo.get_param('partner_syncro_afipws.different_estado_padron') or False)
+        different_state_id=bool(ICPSudo.get_param('partner_syncro_afipws.different_state_id') or False)
+        different_street=bool(ICPSudo.get_param('partner_syncro_afipws.different_street') or False)
+        different_empleador_padron=bool(ICPSudo.get_param('partner_syncro_afipws.different_empleador_padron') or False)
+        different_imp_ganancias_padron=bool(ICPSudo.get_param('partner_syncro_afipws.different_imp_ganancias_padron') or False)
+        different_imp_iva_padron=bool(ICPSudo.get_param('partner_syncro_afipws.different_imp_iva_padron') or False)
+        filters=[]
+        if different_name:
+            filters.append('name')
+        if different_estado_padron:
+            filters.append('estado_padron')
+        if different_state_id:
+            filters.append('state_id')
+        if different_street:
+            filters.append('street')
+        if different_empleador_padron:
+            filters.append('empleador_padron')
+        if different_imp_ganancias_padron:
+            filters.append('imp_ganancias_padron')
+        if different_imp_iva_padron:
+            filters.append('imp_iva_padron')
+        _logger.debug('======>FILTERS<======')
+        _logger.debug('%r',filters)
+        return filters
 
         
         
