@@ -26,7 +26,10 @@
     'license': 'AGPL-3',
     'summary': '''Apocryphal Partner Manager.''',
     'depends': [
-        'base','l10n_ar_account','l10n_ar_partner'
+        'base',
+        'l10n_ar_account',
+        'l10n_ar_partner',
+        'account_payment_group',
     ],
     'external_dependencies': {
     },
