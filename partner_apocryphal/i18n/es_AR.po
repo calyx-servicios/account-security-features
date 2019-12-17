@@ -1,0 +1,158 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* partner_apocryphal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-17 18:19+0000\n"
+"PO-Revision-Date: 2019-12-17 18:19+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: partner_apocryphal
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_cron_apocryphal_ids
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_users_apocryphal
+#: model:ir.ui.view,arch_db:partner_apocryphal.view_res_partner_apocryphal
+msgid "Apocryphal"
+msgstr "Apocrifo:
+
+#. module: partner_apocryphal
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_apocryphal_date
+msgid "Apocryphal Date"
+msgstr "Fecha Apocrifo"
+
+#. module: partner_apocryphal
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_ids
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_users_apocryphal_ids
+#: model:ir.ui.view,arch_db:partner_apocryphal.view_partner_form
+msgid "Apocryphal History"
+msgstr "Historial Apocrifo"
+
+#. module: partner_apocryphal
+#: model:ir.ui.view,arch_db:partner_apocryphal.view_partner_form
+msgid "Check Apocryphal"
+msgstr "Verificar Apocrifo"
+
+#. module: partner_apocryphal
+#: model:ir.model,name:partner_apocryphal.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: partner_apocryphal
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_create_uid
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_cron_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: partner_apocryphal
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_create_date
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_cron_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: partner_apocryphal
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_cron_id_10758
+msgid "Cron"
+msgstr "Cron"
+
+#. module: partner_apocryphal
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_cron_cron_date
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_cron_date
+msgid "Cron Date"
+msgstr "Cron Fecha"
+
+#. module: partner_apocryphal
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_cron_last_10762
+msgid "Current"
+msgstr "Actual"
+
+#. module: partner_apocryphal
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_cron_display_name
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_display_name
+msgid "Display Name"
+msgstr "Mostrar Nombre"
+
+#. module: partner_apocryphal
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_cron_id
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_id
+msgid "ID"
+msgstr "ID"
+
+#. module: partner_apocryphal
+#: model:ir.model,name:partner_apocryphal.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: partner_apocryphal
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_cron_last
+msgid "Last"
+msgstr "Ultimo"
+
+#. module: partner_apocryphal
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal___last_update
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_cron___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: partner_apocryphal
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_cron_write_uid
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización realizada por"
+
+#. module: partner_apocryphal
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_cron_write_date
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: partner_apocryphal
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_partner_id
+msgid "Partner"
+msgstr "Contacto"
+
+#. module: partner_apocryphal
+#: model:ir.model,name:partner_apocryphal.model_account_payment_group
+msgid "Payment Group"
+msgstr "Grupo de Pagos"
+
+#. module: partner_apocryphal
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_publication_date
+msgid "Publication Date"
+msgstr "Fecha de Publicacion"
+
+#. module: partner_apocryphal
+#: code:addons/partner_apocryphal/models/account_invoice.py:20
+#: code:addons/partner_apocryphal/models/account_payment_group.py:22
+#, python-format
+msgid "This Partner is set as Apocryphal. Please verify the data"
+msgstr "El contacto es apocrifo. Verifique la informacion"
+
+#. module: partner_apocryphal
+#: model:ir.actions.server,name:partner_apocryphal.update_partner_apocryphal_ir_actions_server
+#: model:ir.cron,cron_name:partner_apocryphal.update_partner_apocryphal
+#: model:ir.cron,name:partner_apocryphal.update_partner_apocryphal
+msgid "Update Partner Apocryphal"
+msgstr "Cron Verificacion Apocrifos"
+
+#. module: partner_apocryphal
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_cuit
+msgid "cuit"
+msgstr "cuit"
+
+#. module: partner_apocryphal
+#: model:ir.model,name:partner_apocryphal.model_res_partner_apocryphal
+msgid "res.partner.apocryphal"
+msgstr "res.partner.apocryphal"
+
+#. module: partner_apocryphal
+#: model:ir.model,name:partner_apocryphal.model_res_partner_apocryphal_cron
+msgid "res.partner.apocryphal.cron"
+msgstr "res.partner.apocryphal.cron"

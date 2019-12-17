@@ -1,0 +1,170 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* partner_syncro_afipws
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-17 18:54+0000\n"
+"PO-Revision-Date: 2019-12-17 18:54+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: partner_syncro_afipws
+#: model:ir.ui.view,arch_db:partner_syncro_afipws.view_res_partner_different
+msgid "AFIP Different"
+msgstr "Diferente AFIP"
+
+#. module: partner_syncro_afipws
+#: model:ir.model.fields,field_description:partner_syncro_afipws.field_res_partner_different
+#: model:ir.model.fields,field_description:partner_syncro_afipws.field_res_users_different
+#: model:ir.ui.view,arch_db:partner_syncro_afipws.view_res_partner_different
+msgid "Afip Different"
+msgstr "Diferente AFIP"
+
+#. module: partner_syncro_afipws
+#: model:ir.ui.view,arch_db:partner_syncro_afipws.res_config_settings_view_form
+msgid "Afip Syncro Different Triggers"
+msgstr "Disparadores Diferencias Afip Syncro"
+
+#. module: partner_syncro_afipws
+#: model:ir.ui.view,arch_db:partner_syncro_afipws.res_config_settings_view_form
+msgid "AfipSyncro"
+msgstr "AfipSyncro"
+
+#. module: partner_syncro_afipws
+#: model:ir.ui.view,arch_db:partner_syncro_afipws.view_partner_form
+msgid "Check Syncro"
+msgstr "Verificar Afip Syncro"
+
+#. module: partner_syncro_afipws
+#: model:ir.model,name:partner_syncro_afipws.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: partner_syncro_afipws
+#: model:ir.model.fields,field_description:partner_syncro_afipws.field_res_partner_syncro_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: partner_syncro_afipws
+#: model:ir.model.fields,field_description:partner_syncro_afipws.field_res_partner_syncro_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: partner_syncro_afipws
+#: model:ir.model.fields,help:partner_syncro_afipws.field_res_config_settings_different_empleador_padron
+msgid "Different Empleador Padron"
+msgstr "Diferente Empleador Padron"
+
+#. module: partner_syncro_afipws
+#: model:ir.model.fields,help:partner_syncro_afipws.field_res_config_settings_different_imp_ganancias_padron
+msgid "Different Impuesto Ganancia Padron"
+msgstr "Diferente Impuesto Ganancia Padron"
+
+#. module: partner_syncro_afipws
+#: model:ir.model.fields,help:partner_syncro_afipws.field_res_config_settings_different_imp_iva_padron
+msgid "Different Impuesto Iva Padron"
+msgstr "Diferente Impuesto Iva Padron"
+
+#. module: partner_syncro_afipws
+#: model:ir.model.fields,help:partner_syncro_afipws.field_res_config_settings_different_name
+msgid "Different Name"
+msgstr "Diferente Nombre"
+
+#. module: partner_syncro_afipws
+#: model:ir.model.fields,help:partner_syncro_afipws.field_res_config_settings_different_estado_padron
+msgid "Different Padron"
+msgstr "Diferente Padron"
+
+#. module: partner_syncro_afipws
+#: model:ir.model.fields,help:partner_syncro_afipws.field_res_config_settings_different_state_id
+msgid "Different State"
+msgstr "Diferent Estado"
+
+#. module: partner_syncro_afipws
+#: model:ir.model.fields,help:partner_syncro_afipws.field_res_config_settings_different_street
+msgid "Different Street"
+msgstr "Diferente Direccion"
+
+#. module: partner_syncro_afipws
+#: model:ir.model.fields,field_description:partner_syncro_afipws.field_res_partner_syncro_display_name
+msgid "Display Name"
+msgstr "Mostrar Nombre"
+
+#. module: partner_syncro_afipws
+#: model:ir.model.fields,field_description:partner_syncro_afipws.field_res_config_settings_different_empleador_padron
+msgid "Empleador Padron"
+msgstr "Empleador Padron"
+
+#. module: partner_syncro_afipws
+#: model:ir.model.fields,field_description:partner_syncro_afipws.field_res_config_settings_different_estado_padron
+msgid "Estado Padron"
+msgstr "Estado Padron"
+
+#. module: partner_syncro_afipws
+#: model:ir.model.fields,field_description:partner_syncro_afipws.field_res_partner_syncro_id
+msgid "ID"
+msgstr "ID"
+
+#. module: partner_syncro_afipws
+#: model:ir.model.fields,field_description:partner_syncro_afipws.field_res_config_settings_different_imp_ganancias_padron
+msgid "Impuesto Ganancia Padron"
+msgstr "Impuesto Ganancia Padron"
+
+#. module: partner_syncro_afipws
+#: model:ir.model.fields,field_description:partner_syncro_afipws.field_res_config_settings_different_imp_iva_padron
+msgid "Impuesto Iva Padron"
+msgstr "Impuesto Iva Padron"
+
+#. module: partner_syncro_afipws
+#: model:ir.model.fields,field_description:partner_syncro_afipws.field_res_partner_syncro___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: partner_syncro_afipws
+#: model:ir.model.fields,field_description:partner_syncro_afipws.field_res_partner_syncro_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización realizada por"
+
+#. module: partner_syncro_afipws
+#: model:ir.model.fields,field_description:partner_syncro_afipws.field_res_partner_syncro_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: partner_syncro_afipws
+#: model:ir.model.fields,field_description:partner_syncro_afipws.field_res_config_settings_different_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: partner_syncro_afipws
+#: model:ir.actions.server,name:partner_syncro_afipws.update_partner_syncro_ir_actions_server
+#: model:ir.cron,cron_name:partner_syncro_afipws.update_partner_syncro
+#: model:ir.cron,name:partner_syncro_afipws.update_partner_syncro
+msgid "Partner Syncro Afip"
+msgstr "Partner Syncro Afip"
+
+#. module: partner_syncro_afipws
+#: model:ir.model.fields,field_description:partner_syncro_afipws.field_res_config_settings_different_state_id
+msgid "State"
+msgstr "Estado"
+
+#. module: partner_syncro_afipws
+#: model:ir.model.fields,field_description:partner_syncro_afipws.field_res_config_settings_different_street
+msgid "Street"
+msgstr "Calle"
+
+#. module: partner_syncro_afipws
+#: model:ir.model,name:partner_syncro_afipws.model_res_config_settings
+msgid "res.config.settings"
+msgstr "res.config.settings"
+
+#. module: partner_syncro_afipws
+#: model:ir.model,name:partner_syncro_afipws.model_res_partner_syncro
+msgid "res.partner.syncro"
+msgstr "res.partner.syncro"

@@ -8,6 +8,7 @@
         <field name="inherit_id" ref="l10n_ar_partner.view_partner_form"/>
         <field name="arch" type="xml">
             <field name="main_id_number" position="after">
+            <label for="apocryphal" />
             <field name="apocryphal" />
             <button name="action_partner_check_apocryphal" type="object" string="Check Apocryphal" class="oe_link oe_inline" attrs="{'invisible': [('cuit', '=', False)]}"/>
             </field>
@@ -27,6 +28,21 @@
         </field>
     </record>
 
-
+    <record id="view_res_partner_apocryphal" model="ir.ui.view">
+            <field name="name">view.res.partner.apocryphalt.inherit</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_res_partner_filter"/>
+            <field name="arch" type="xml">
+                <field name="category_id" position="after">
+                    <field name="apocryphal"/>
+                </field>
+                <filter name="salesperson" position="after">
+                    <filter string="Apocryphal" context="{'group_by': 'apocryphal'}"/>
+                </filter>
+                <filter name="inactive" position="after">
+                        <filter string="Apocryphal" name="different" domain="[('apocryphal','=',True)]"/>
+                </filter>
+            </field>
+        </record>
 
 </odoo>
