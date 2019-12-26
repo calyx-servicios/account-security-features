@@ -8,6 +8,7 @@
         <field name="inherit_id" ref="l10n_ar_partner.view_partner_form"/>
         <field name="arch" type="xml">
             <field name="main_id_number" position="after">
+            <span> - </span>
             <label for="apocryphal" />
             <field name="apocryphal" />
             <button name="action_partner_check_apocryphal" type="object" string="Check Apocryphal" class="oe_link oe_inline" attrs="{'invisible': [('cuit', '=', False)]}"/>

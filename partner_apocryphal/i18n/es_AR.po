@@ -1,13 +1,13 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* partner_apocryphal
+#   * partner_apocryphal
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 18:19+0000\n"
-"PO-Revision-Date: 2019-12-17 18:19+0000\n"
+"POT-Creation-Date: 2019-12-26 18:05+0000\n"
+"PO-Revision-Date: 2019-12-26 18:05+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -21,24 +21,24 @@ msgstr ""
 #: model:ir.model.fields,field_description:partner_apocryphal.field_res_users_apocryphal
 #: model:ir.ui.view,arch_db:partner_apocryphal.view_res_partner_apocryphal
 msgid "Apocryphal"
-msgstr "Apocrifo:
+msgstr "Apócrifo"
 
 #. module: partner_apocryphal
 #: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_apocryphal_date
 msgid "Apocryphal Date"
-msgstr "Fecha Apocrifo"
+msgstr "Fecha Apócrifo"
 
 #. module: partner_apocryphal
 #: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_ids
 #: model:ir.model.fields,field_description:partner_apocryphal.field_res_users_apocryphal_ids
 #: model:ir.ui.view,arch_db:partner_apocryphal.view_partner_form
 msgid "Apocryphal History"
-msgstr "Historial Apocrifo"
+msgstr "Historial Apócrifo"
 
 #. module: partner_apocryphal
 #: model:ir.ui.view,arch_db:partner_apocryphal.view_partner_form
 msgid "Check Apocryphal"
-msgstr "Verificar Apocrifo"
+msgstr "Verificar Apócrifo"
 
 #. module: partner_apocryphal
 #: model:ir.model,name:partner_apocryphal.model_res_partner
@@ -58,7 +58,7 @@ msgid "Created on"
 msgstr "Creado en"
 
 #. module: partner_apocryphal
-#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_cron_id_10758
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_cron_id_10485
 msgid "Cron"
 msgstr "Cron"
 
@@ -66,10 +66,10 @@ msgstr "Cron"
 #: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_cron_cron_date
 #: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_cron_date
 msgid "Cron Date"
-msgstr "Cron Fecha"
+msgstr "Fecha de verificación"
 
 #. module: partner_apocryphal
-#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_cron_last_10762
+#: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_cron_last_10487
 msgid "Current"
 msgstr "Actual"
 
@@ -126,26 +126,26 @@ msgstr "Grupo de Pagos"
 #. module: partner_apocryphal
 #: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_publication_date
 msgid "Publication Date"
-msgstr "Fecha de Publicacion"
+msgstr "Fecha de Publicación"
 
 #. module: partner_apocryphal
 #: code:addons/partner_apocryphal/models/account_invoice.py:20
 #: code:addons/partner_apocryphal/models/account_payment_group.py:22
 #, python-format
 msgid "This Partner is set as Apocryphal. Please verify the data"
-msgstr "El contacto es apocrifo. Verifique la informacion"
+msgstr "El contacto es Apócrifo. Verifique la informacion"
 
 #. module: partner_apocryphal
 #: model:ir.actions.server,name:partner_apocryphal.update_partner_apocryphal_ir_actions_server
 #: model:ir.cron,cron_name:partner_apocryphal.update_partner_apocryphal
 #: model:ir.cron,name:partner_apocryphal.update_partner_apocryphal
 msgid "Update Partner Apocryphal"
-msgstr "Cron Verificacion Apocrifos"
+msgstr "Actualización de Apócrifos"
 
 #. module: partner_apocryphal
 #: model:ir.model.fields,field_description:partner_apocryphal.field_res_partner_apocryphal_cuit
 msgid "cuit"
-msgstr "cuit"
+msgstr "CUIT"
 
 #. module: partner_apocryphal
 #: model:ir.model,name:partner_apocryphal.model_res_partner_apocryphal
@@ -156,3 +156,4 @@ msgstr "res.partner.apocryphal"
 #: model:ir.model,name:partner_apocryphal.model_res_partner_apocryphal_cron
 msgid "res.partner.apocryphal.cron"
 msgstr "res.partner.apocryphal.cron"
+
