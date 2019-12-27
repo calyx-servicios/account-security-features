@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 18:54+0000\n"
-"PO-Revision-Date: 2019-12-17 18:54+0000\n"
+"POT-Creation-Date: 2019-12-27 20:35+0000\n"
+"PO-Revision-Date: 2019-12-27 20:35+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -30,7 +30,7 @@ msgstr "Diferente AFIP"
 #. module: partner_syncro_afipws
 #: model:ir.ui.view,arch_db:partner_syncro_afipws.res_config_settings_view_form
 msgid "Afip Syncro Different Triggers"
-msgstr "Disparadores Diferencias Afip Syncro"
+msgstr "Disparadores Diferencias Afip"
 
 #. module: partner_syncro_afipws
 #: model:ir.ui.view,arch_db:partner_syncro_afipws.res_config_settings_view_form
@@ -40,7 +40,7 @@ msgstr "AfipSyncro"
 #. module: partner_syncro_afipws
 #: model:ir.ui.view,arch_db:partner_syncro_afipws.view_partner_form
 msgid "Check Syncro"
-msgstr "Verificar Afip Syncro"
+msgstr "Verificar Sincronizacion Afip"
 
 #. module: partner_syncro_afipws
 #: model:ir.model,name:partner_syncro_afipws.model_res_partner
@@ -85,7 +85,7 @@ msgstr "Diferente Padron"
 #. module: partner_syncro_afipws
 #: model:ir.model.fields,help:partner_syncro_afipws.field_res_config_settings_different_state_id
 msgid "Different State"
-msgstr "Diferent Estado"
+msgstr "Diferente Provincia"
 
 #. module: partner_syncro_afipws
 #: model:ir.model.fields,help:partner_syncro_afipws.field_res_config_settings_different_street
@@ -147,12 +147,12 @@ msgstr "Nombre"
 #: model:ir.cron,cron_name:partner_syncro_afipws.update_partner_syncro
 #: model:ir.cron,name:partner_syncro_afipws.update_partner_syncro
 msgid "Partner Syncro Afip"
-msgstr "Partner Syncro Afip"
+msgstr "Sincronizacion Afip Contacto"
 
 #. module: partner_syncro_afipws
 #: model:ir.model.fields,field_description:partner_syncro_afipws.field_res_config_settings_different_state_id
 msgid "State"
-msgstr "Estado"
+msgstr "Provincia"
 
 #. module: partner_syncro_afipws
 #: model:ir.model.fields,field_description:partner_syncro_afipws.field_res_config_settings_different_street
